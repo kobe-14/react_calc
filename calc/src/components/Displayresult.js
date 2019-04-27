@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+// import $ from 'jquery';
+import './comp.css';
 
 export class Displayresult extends Component {
+    
   render() {
+    // $('#input').inputfit();
     return (
-      <div>
-        <div className="resultDisplay">
-            {this.props.result}
-        </div>
+      <div className="buttonWrapper">
+        <input type="text" id="input" onChange = {this.props.inputType} value={this.props.result} className="resultDisplay"></input>
       </div>
     )
   }
+  
 }
 
 export default Displayresult

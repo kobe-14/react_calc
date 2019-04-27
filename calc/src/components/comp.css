@@ -1,0 +1,36 @@
+.buttonStyle {
+    border: 2px;
+    margin: 2px 0 0 2px;
+    width: 50px;
+    height: 50px;
+    background: #CAD3C8;
+    font-size: 100%;
+}
+
+.buttonStyle:hover {
+    background: #25CCF7;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+.buttonStyle:active{
+    border: 0px #CAD3C8;
+}
+
+.resultDisplay{
+    margin: 0 0 0 2px;
+    background: #ecf0f1;
+    width: 90%;
+    font: #ffffff;
+    font-size: 50px;
+    height: 50px;
+    text-align: right;
+    overflow-x: auto;
+    cursor: none;
+    text-size-adjust: 50%;
+}
+
+.buttonWrapper {
+    width: 225px;
+    margin : auto;
+}

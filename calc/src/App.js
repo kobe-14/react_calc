@@ -15,7 +15,7 @@ export class App extends Component {
   //   result: ""
   // }
 
-  clearFunc = () => {
+  clearEverything = () => {
     this.setState({
       result: ""
     });
@@ -43,11 +43,23 @@ export class App extends Component {
     })
   }
 
+  inputType = (e) => {
+    this.setState({
+      result : e.target.value
+    });
+  }
+
+  clearFunc = () => {
+    this.setState({
+      result : this.state.result.slice(0,-1)
+    });
+  }
+
   render() {
     return (
-      <div>
-        <Result result={this.state.result}/>
-        <Keypad  buttonClick={this.buttonClick} clearFunc={this.clearFunc} solve={this.solve}/>
+      <div className="App">
+        <Result result={this.state.result} inputType={this.inputType}/>
+        <Keypad  buttonClick={this.buttonClick} clearEverything={this.clearEverything} solve={this.solve} clearFunc={this.clearFunc}/>
       </div>
     )
   }
