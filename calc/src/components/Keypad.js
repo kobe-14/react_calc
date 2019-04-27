@@ -5,7 +5,7 @@ export class Keypad extends Component {
 
   render() {
     const clearStyle ={
-        width: '205px'
+        width: '155px'
     }
     return (
       <div className="buttonWrapper">
@@ -34,6 +34,7 @@ export class Keypad extends Component {
             <button name="/" onClick={e => this.props.buttonClick(e.target.name)} className="buttonStyle">/</button>
         </div>
         <div>
+            <button name="." onClick={e => this.props.buttonClick(e.target.name)} className="buttonStyle">.</button>
             <button name="=" onClick={this.props.solve} className="buttonStyle" style={clearStyle}>=</button>
         </div>
       </div>
